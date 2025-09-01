@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN G-ELECTRA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Main favicon for most browsers -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- For modern browsers, providing different sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- For Apple devices when users add your site to their home screen -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- /// NEW: OPENING ANIMATION SPLASH SCREEN /// -->
+    <div id="splash-screen">
+        <img src="logo.png" alt="Gelectra Club Logo" class="splash-logo">
+        <h1 class="splash-text">Ready to start your innovation, tech, and fun journey?</h1>
+    </div>
+
+    <!-- Main container - initially hidden, made visible by JS -->
+    <div class="main-container">
+        <div class="left-panel">
+            <img src="logo.png" alt="Gelectra Club Logo" class="logo">
+            <h2>JOIN TEAM</h2>
+            <h1>G-ELECTRA</h1>
+            <p class="tagline">Innovate. Create. Electrify.</p>
+            <ul class="info-list">
+                <li>Join a community of tech enthusiasts.</li>
+                <li>Work on cutting-edge hardware & software projects.</li>
+                <li>Gain hands-on experience and build your portfolio.</li>
+                <li>Develop skills in teamwork, leadership, and project management.</li>
+            </ul>
+        </div>
+        <div class="right-panel">
+            <div class="form-wrapper">
+                <!-- Step 1: Basic Details -->
+                <div id="step1" class="form-step active-step">
+                    <h2 class="form-title">Your Journey Starts Here</h2>
+                    <form id="form-step1">
+                        <div class="input-group"><input type="text" id="name" placeholder="Full Name"
+                                class="input-field" required></div>
+                        <div class="input-group"><input type="tel" id="phone" placeholder="Phone Number"
+                                class="input-field" required></div>
+                        <div class="input-group"><input type="text" id="regNo" placeholder="Registration Number"
+                                class="input-field" required></div>
+                        <div class="input-group"><input type="email" id="email" placeholder="Your GITAM Email ID"
+                                class="input-field" required></div>
+                        <div class="input-group"><select id="year" class="input-field" required>
+                                <option value="" disabled selected>Select Your Year</option>
+                                <option>1st Year</option>
+                                <option>2nd Year</option>
+                                <option>3rd Year</option>
+                                <option>4th Year</option>
+                                <option>Other</option>
+                            </select></div>
+                        <div class="input-group"><select id="branch" class="input-field" required>
+                                <option value="" disabled selected>Select Your Branch</option>
+                                <option>CSE</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>MECH</option>
+                                <option>CIVIL</option>
+                                <option>BBA</option>
+                                <option>B.COM</option>
+                                <option>BSC</option>
+                                <option>MSC</option>
+                                <option>Other</option>
+                            </select></div>
+                        <div class="input-group"><select id="school" class="input-field" required>
+                                <option value="" disabled selected>Select Your School</option>
+                                <option>School of Technology</option>
+                                <option>School of Science</option>
+                                <option>School of Business</option>
+                                <option>Other</option>
+                            </select></div>
+                        <p id="step1-error" class="error-message"></p>
+                        <button type="submit" class="btn">Next →</button>
+                    </form>
+                </div>
+                <!-- Other steps remain unchanged -->
+                <div id="step2" class="form-step">
+                    <h2 class="form-title">Choose Your Domain</h2>
+                    <div id="domain-options" class="domain-grid"></div>
+                    <div id="job-description-box" class="job-description"></div>
+                    <div class="checkbox-container"><input type="checkbox" id="suitsMe"><label for="suitsMe">This role
+                            suits me</label></div>
+                    <p id="step2-error" class="error-message"></p>
+                    <div class="button-group"><button id="prev-step2" class="btn btn-secondary">← Back</button><button
+                            id="next-step2" class="btn">Next →</button></div>
+                </div>
+                <div id="step3" class="form-step">
+                    <h2 id="questions-title" class="form-title">Application Questions</h2>
+                    <form id="form-step3">
+                        <div id="questions-container"></div>
+                        <div class="button-group"><button type="button" id="prev-step3" class="btn btn-secondary">←
+                                Back</button><button type="submit" class="btn">Submit Application</button></div>
+                    </form>
+                </div>
+                <div id="step4" class="form-step text-center">
+                    <h2 class="form-title">Application Submitted!</h2>
+                    <p id="thank-you-message" class="subtitle"></p>
+                    <p class="subtitle">Please check your email for a confirmation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loader" class="loader-overlay">
+        <div class="spinner"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
