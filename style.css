@@ -546,3 +546,146 @@ select.input-field option {
     box-shadow: 0 4px 15px rgba(243, 167, 60, 0.3);
     transform: translateY(-2px);
 }
+
+/* --- ADD THIS TO THE END OF YOUR STYLE.CSS --- */
+/* --- ADMIN PANEL STYLES --- */
+.admin-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+.admin-card {
+    background: var(--panel-color);
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.7);
+    animation: container-enter 0.8s ease-out forwards;
+    opacity: 0;
+    transform: scale(0.98);
+}
+.admin-card .logo {
+    margin: 0 auto 20px auto;
+}
+.admin-card .subtitle {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+}
+.admin-card .btn {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.dashboard-header .btn {
+    width: auto;
+    padding: 10px 20px;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.stat-card {
+    background: var(--background-color);
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+}
+.stat-card h2 {
+    color: var(--subtitle-color);
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.stat-card p {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.chart-container {
+    background: var(--background-color);
+    padding: 25px;
+    border-radius: 16px;
+}
+.chart-container.full-width {
+    grid-column: 1 / -1; /* Makes this chart span the full width */
+}
+.chart-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--subtitle-color);
+}
+
+/* =================================================== */
+/* === FIX FOR ADMIN PAGE VISIBILITY (ADD THIS AT END) === */
+/* =================================================== */
+
+.admin-page .admin-card {
+    /* Force the admin card to be visible immediately */
+    opacity: 1;
+    transform: scale(1);
+    
+    /* Turn off the entry animation that was making it invisible */
+    animation: none; 
+}
+
+/* --- ADD THIS TO THE VERY END OF YOUR STYLE.CSS FILE --- */
+
+/* --- ADMIN LOGIN LINK STYLES --- */
+
+/* Make the parent panel a positioning container */
+.left-panel {
+    position: relative;
+}
+
+.admin-link {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: var(--subtitle-color);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.admin-link:hover {
+    color: var(--primary-color);
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* --- Responsive adjustment for the admin link on mobile --- */
+@media (max-width: 900px) {
+    .admin-link {
+        /* Center the link at the bottom of the top panel on mobile */
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+}
+
+/* --- ADD THIS TO THE END OF YOUR STYLE.CSS --- */
+/* --- Admin Header Button Styles --- */
+
+.header-buttons {
+    display: flex;
+    gap: 15px; /* Adds space between the buttons */
+}
