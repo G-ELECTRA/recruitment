@@ -5,30 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOIN G-ELECTRA</title>
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Styles and Fonts -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Main favicon for most browsers -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <!-- For modern browsers, providing different sizes -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-
-    <!-- For Apple devices when users add your site to their home screen -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
 
 <body>
-
-    <!-- /// NEW: OPENING ANIMATION SPLASH SCREEN /// -->
+    <!-- Opening Animation Splash Screen -->
     <div id="splash-screen">
         <img src="logo.png" alt="Gelectra Club Logo" class="splash-logo">
         <h1 class="splash-text">Ready to start your innovation, tech, and fun journey?</h1>
     </div>
 
-    <!-- Main container - initially hidden, made visible by JS -->
+    <!-- Main container -->
     <div class="main-container">
         <div class="left-panel">
             <img src="logo.png" alt="Gelectra Club Logo" class="logo">
@@ -41,6 +37,11 @@
                 <li>Gain hands-on experience and build your portfolio.</li>
                 <li>Develop skills in teamwork, leadership, and project management.</li>
             </ul>
+
+            <!-- /// NEW: ADMIN LOGIN BUTTON ADDED HERE /// -->
+            <a href="admin.html" target="_blank" class="admin-link">Admin Login</a>
+            <!-- /// END OF NEW CODE /// -->
+
         </div>
         <div class="right-panel">
             <div class="form-wrapper">
@@ -88,7 +89,7 @@
                         <button type="submit" class="btn">Next →</button>
                     </form>
                 </div>
-                <!-- Other steps remain unchanged -->
+                <!-- Other steps -->
                 <div id="step2" class="form-step">
                     <h2 class="form-title">Choose Your Domain</h2>
                     <div id="domain-options" class="domain-grid"></div>
