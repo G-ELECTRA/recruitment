@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // Find this block in your script.js and ensure it is correct
     formStep1.addEventListener('submit', (e) => {
         e.preventDefault();
         step1Error.style.display = 'none';
@@ -90,11 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
             step1Error.style.display = 'block';
             return;
         }
+        // Store data from Step 1
         formData.name = document.getElementById('name').value;
         formData.phone = document.getElementById('phone').value;
         formData.regNo = document.getElementById('regNo').value;
-        formData.email = emailInput.value;
+        formData.email = document.getElementById('email').value;
         formData.year = document.getElementById('year').value;
+        // THIS LINE IS CRUCIAL
         formData.branch = document.getElementById('branch').value;
         formData.school = document.getElementById('school').value;
         showStep(2);
@@ -206,3 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     prevStep3Btn.addEventListener('click', () => showStep(2));
 });
+
+
+//const CLIENT_ID = '1071851313355-3m8so543978ankm4iq83rkegc0qkq828.apps.googleusercontent.com';
+//const SPREADSHEET_ID = '1Ry5D4dYzn73g7-OxZZNm_q3XVEdINL5_jtRgB7SF6ck';
