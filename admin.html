@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Gelectra</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css"> <!-- We'll reuse some styles -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Charting Library -->
+</head>
+
+<body class="admin-page">
+    <div class="admin-container">
+        <!-- Login Screen -->
+        <div id="login-screen" class="admin-card">
+            <img src="logo.png" alt="Gelectra Logo" class="logo">
+            <h1>Admin Dashboard</h1>
+            <p class="subtitle">Please sign in with an authorized Google accounts</p>
+            <button id="authorize_button" class="btn">Sign in with Google</button>
+        </div>
+
+        <!-- Dashboard Screen (hidden by default) -->
+        <div id="dashboard-screen" class="admin-card" style="display: none;">
+            <div class="dashboard-header">
+                <h1>Recruitment Analytics</h1>
+                <!-- New container for the buttons -->
+                <div class="header-buttons">
+                    <button id="refresh_button" class="btn btn-secondary">Refresh Data</button>
+                    <button id="signout_button" class="btn btn-secondary">Sign Out</button>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h2>Total Applicants</h2>
+                    <p id="total-applicants">--</p>
+                </div>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Applications by Year</h3>
+                    <canvas id="year-chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Applications by Branch</h3>
+                    <canvas id="branch-chart"></canvas>
+                </div>
+            </div>
+            <div class="charts-grid">
+                <div class="chart-container full-width">
+                    <h3>Applications by Domain</h3>
+                    <canvas id="domain-chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Your script needs to be loaded first so the functions exist -->
+    <script src="admin.js"></script>
+
+    <!-- Then load the Google scripts which call your functions -->
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+</body>
+
+</html>
