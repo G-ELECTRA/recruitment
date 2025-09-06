@@ -23,28 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
     //
     const jobData = {
         'Hardware Team': {
-            summary: 'Work on designing and building physical electronic circuits, prototyping with microcontrollers, and bringing ideas to life through hardware.',
-            link: 'https://docs.google.com/document/d/YOUR_HARDWARE_JD_LINK_HERE' // <-- PASTE YOUR LINK
+            summary: 'If building excites you, this team is for you. Work on IoT, robotics, and electronic prototypes while experimenting with new tools and technologies. You’ll learn hands-on skills like soldering, testing, and troubleshooting. By joining, you’ll develop practical engineering experience, teamwork abilities, and the confidence to showcase your creations in competitions and exhibitions.',
+            link: 'https://drive.google.com/drive/folders/1xHUR8e8yujiYv2dz-rXdtt7SAGfEa37W?usp=sharing' // <-- PASTE YOUR LINK
         },
         'Software Team': {
-            summary: 'Focus on algorithms, competitive programming, and building the logic that powers our most innovative projects. A great place for problem solvers.',
-            link: 'https://docs.google.com/document/d/YOUR_SOFTWARE_JD_LINK_HERE' // <-- PASTE YOUR LINK
+            summary: 'Passionate about coding? Bring ideas to life with impactful software projects and prototypes. You’ll explore new tools, build applications, and even collaborate with hardware for complete solutions. With us, you’ll improve your coding, debugging, and problem-solving skills while gaining real-world project exposure and a chance to shine in hackathons and challenges.',
+            link: 'https://drive.google.com/drive/folders/1xHUR8e8yujiYv2dz-rXdtt7SAGfEa37W?usp=sharing' // <-- PASTE YOUR LINK
         },
         'Marketing Team': {
-            summary: 'Become the voice of Gelectra. You will manage our social media, create engaging campaigns, and connect with sponsors and collaborators.',
-            link: 'https://docs.google.com/document/d/YOUR_MARKETING_JD_LINK_HERE' // <-- PASTE YOUR LINK
+            summary: 'Be the voice of G-Electra — plan campaigns, manage social media, and create buzz that makes our events unforgettable. If you enjoy creativity, outreach, and connecting with people, this is your space. By joining, you’ll sharpen communication, leadership, and networking skills that will give you confidence beyond college.',
+            link: 'https://drive.google.com/drive/folders/1xHUR8e8yujiYv2dz-rXdtt7SAGfEa37W?usp=sharing' // <-- PASTE YOUR LINK
         },
         'Creative Team': {
-            summary: 'The visual architects of our brand. You will be responsible for designing stunning posters, videos, and all visual content that represents Gelectra.',
-            link: 'https://docs.google.com/document/d/YOUR_CREATIVE_JD_LINK_HERE' // <-- PASTE YOUR LINK
+            summary: 'Your designs will shape the identity of G-Electra. From posters to videos, you’ll create visuals that captivate and leave a lasting impression. If creativity excites you, this is your playground. By working with us, you’ll gain design expertise, real-time experience, and the ability to showcase your work in live projects and events.',
+            link: 'https://drive.google.com/drive/folders/1xHUR8e8yujiYv2dz-rXdtt7SAGfEa37W?usp=sharing' // <-- PASTE YOUR LINK
         },
         'Content Team': {
-            summary: 'The storytellers of the club. You will craft compelling narratives, write articles, and create scripts for our projects and social media.',
-            link: 'https://docs.google.com/document/d/YOUR_CONTENT_JD_LINK_HERE' // <-- PASTE YOUR LINK
+            summary: 'Love writing and storytelling? Craft blogs, captions, and reports that capture the essence of events and inspire others. You’ll learn to communicate ideas effectively, simplify technical concepts, and maintain professionalism. With us, you’ll enhance your writing, editing, and creative thinking skills while gaining exposure to technical trends and collaborative teamwork.',
+            link: 'https://drive.google.com/drive/folders/1xHUR8e8yujiYv2dz-rXdtt7SAGfEa37W?usp=sharing' // <-- PASTE YOUR LINK
         },
         'Web Development Team': {
-            summary: 'Builders of our digital home. You will develop and maintain the club\'s website and web-based applications using modern technologies.',
-            link: 'https://docs.google.com/document/d/YOUR_WEBDEV_JD_LINK_HERE' // <-- PASTE YOUR LINK
+            summary: 'Build and maintain our digital presence with real-world websites that matter. From updating events to creating smooth user experiences, you’ll work on projects that directly reach students and sponsors. Joining this team will sharpen your coding, design, and problem-solving skills while giving you a portfolio that proves your abilities in the tech world.',
+            link: 'https://drive.google.com/drive/folders/1xHUR8e8yujiYv2dz-rXdtt7SAGfEa37W?usp=sharing' // <-- PASTE YOUR LINK
         }
     };
 
