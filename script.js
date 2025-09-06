@@ -49,13 +49,56 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const questionData = {
-        'Software Team': ['Describe a challenging programming problem you have solved.', 'Which programming language are you most comfortable with and why?', 'What is your experience with version control systems like Git?', 'What kind of software projects are you passionate about building?'],
-        'Hardware Team': ['Have you worked with microcontrollers before? Describe a project.', 'What is your understanding of basic electronic components?', 'How would you approach debugging a circuit that isn\'t working?', 'What hardware project would you be excited to build with a team?'],
-        'Marketing Team': ['How would you promote a club event to maximize student attendance?', 'Describe a successful social media campaign you admire. What made it effective?', 'What strategies would you use to find potential sponsors for the club?', 'How do you measure the success of a marketing campaign?'],
-        'Creative Team': ['What design software are you proficient in (e.g., Photoshop, Canva, Figma)?', 'Describe a design project you are proud of. What was your process?', 'How do you approach creating a visual identity for a new project or event?', 'Where do you find inspiration for your creative work?'],
-        'Content Team': ['What type of content do you most enjoy creating (e.g., articles, scripts, social media posts)?', 'Provide an example of how you would explain a complex technical topic in simple terms.', 'How do you ensure your writing is engaging and error-free?', 'What is your process for researching a new topic to write about?'],
-        'Web Development Team': ['Describe your experience with HTML, CSS, and JavaScript.', 'Have you worked with any web frameworks (like React, Vue, Angular)? If so, which ones?', 'What is the purpose of a REST API in web development?', 'Describe a web project you have built or contributed to.']
+        'Marketing Team': [
+            'What motivated you to join G-Electra, and what do you expect to gain by being a part of the club?',
+            'Which skills or strengths do you feel you can contribute to the club?',
+            'How much time can you dedicate to club activities in a week, considering your academics?',
+            'Suggest one creative idea to promote a technical event on campus.',
+            'How would you convince students to participate in our events?',
+            'If given a very low budget, how would you market an event effectively?'
+        ],
+        'Content Team': [
+            'What motivated you to join G-Electra, and what do you expect to gain by being a part of the club?',
+            'Which skills or strengths do you feel you can contribute to the club?',
+            'How much time can you dedicate to club activities in a week, considering your academics?',
+            'What type of content do you personally enjoy reading or watching the most (blogs, stories, reels, news, etc.)? Why?',
+            'Write a short caption (2–3 lines) for a recruitment poster to attract students.',
+            'How would you explain a technical event to someone from a non-technical background in simple words?'
+        ],
+        'Creative Team': [
+            'What motivated you to join G-Electra, and what do you expect to gain by being a part of the club?',
+            'Which skills or strengths do you feel you can contribute to the club?',
+            'How much time can you dedicate to club activities in a week, considering your academics?',
+            'Which tools/software do you use for design/video editing?',
+            'If asked to design a poster for an event in 1 hour, how would you approach it?',
+            'Share one idea to make our posters/graphics stand out from other clubs.'
+        ],
+        'Hardware Team': [
+            'What motivated you to join G-Electra, and what do you expect to gain by being a part of the club?',
+            'Which skills or strengths do you feel you can contribute to the club?',
+            'How much time can you dedicate to club activities in a week, considering your academics?',
+            'Have you ever worked on hardware projects (Arduino, Raspberry Pi, circuits)? If yes, mention briefly.',
+            'Explain one simple hardware idea you would like to build if given resources.',
+            'Which excites you more: learning new hardware skills or applying existing ones to solve problems?'
+        ],
+        'Software Team': [
+            'What motivated you to join G-Electra, and what do you expect to gain by being a part of the club?',
+            'Which skills or strengths do you feel you can contribute to the club?',
+            'How much time can you dedicate to club activities in a week, considering your academics?',
+            'Have you ever worked on coding projects (apps, websites, automations, etc.)? If yes, mention briefly.',
+            'Explain one simple software idea you would like to build if given resources.',
+            'Which excites you more: learning new coding skills or applying existing ones to solve problems?'
+        ],
+        'Web Development Team': [
+            'What motivated you to join G-Electra, and what do you expect to gain by being a part of the club?',
+            'Which skills or strengths do you feel you can contribute to the club?',
+            'How much time can you dedicate to club activities in a week, considering your academics?',
+            'Have you ever worked with web technologies (HTML, CSS, JavaScript, or frameworks)? If yes, mention briefly.',
+            'What feature would you like to add if you were building a website for G-Electra?',
+            'Do you prefer focusing more on front-end design (UI/UX) or back-end logic (databases, server-side)? Why?'
+        ]
     };
+
 
     let formData = {};
     const steps = document.querySelectorAll('.form-step');
